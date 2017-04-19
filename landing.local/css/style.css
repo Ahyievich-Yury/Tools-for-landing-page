@@ -1,0 +1,132 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 100;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a,
+header ul li a:focus {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .25s, padding .25s;
+}
+
+header ul li a:hover,
+header ul li.active a {
+    color: #28ff06;
+    text-decoration: none;
+
+}
+
+header.top ul li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lp-content {
+    min-height: 500px;
+    border: 1px dashed red;
+    padding: 40px 0;
+}
+
+.lp-content h2 {
+    text-align: center;
+    color: blue;
+    margin: 0 0 20px 0;
+}
+
+footer {
+    background: #000000;
+    padding: 25px 0;
+}
+
+footer p {
+    color: yellow;
+    text-align: center;
+}
+
+/*slideshow */
+
+#slideshow .lp-content {
+    padding: 0;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+    padding: 0 10px;
+    opacity: 0.75;
+}
+
+.owl-dot span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 50%;
+    background:  #fff;
+    transition: background-color 1s;
+
+}
+
+.owl-dot.active span{
+    background-color: #28ff06;
+}
+
+.owl-nav > div{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background-color: #fff;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 50%;
+    opacity: 0.75;
+    transition: opacity 1s;
+    text-align: center;
+}
+.owl-nav > div:hover{
+    opacity: 0.95;
+}
+
+.owl-prev{
+    left: 20px;
+}
+
+.owl-next{
+    right: 20px;
+}
+
+.owl-nav  i{
+    font-style: 2em;
+    color: lawngreen;
+    line-height: 40px;
+
+}
